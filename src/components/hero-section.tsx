@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
-
+import { ArrowRight, Mail, Menu, SendHorizonal, X } from 'lucide-react'
 import { HeroHeader } from "@/components/header"
 import { InfiniteSlider } from '@/components/ui/infinite-slider'
 import { ProgressiveBlur } from '@/components/ui/progressive-blur'
@@ -12,22 +12,29 @@ export default function HeroSection() {
         <>
             <HeroHeader />
             <main className="overflow-x-hidden">
-                <section>
-                    <div className="pb-16 pt-8 md:pb-24 md:pt-16 lg:pb-40 lg:pt-32">
-                        <div className="flex flex-col-reverse items-center justify-between gap-8 md:flex-row md:gap-12 md:px-[40px] xl:px-[150px]">
-                            <div className="mx-auto max-w-lg text-center md:text-left md:ml-0 md:w-1/2">
-                                <TextEffect per='char' preset='fade' className="mt-6 max-w-2xl text-balance text-4xl font-medium md:mt-8 md:text-5xl lg:mt-12 lg:text-6xl xl:text-7xl">
-                                    Ship 10x Faster with NS
-                                </TextEffect>
-                                <TextEffect per='char' preset='fade' className="mt-6 max-w-2xl text-pretty text-base md:mt-8 md:text-lg">
-                                    Highly customizable components for building modern websites and applications that look and feel the way you mean it.
-                                </TextEffect>
-                                <div className="mt-8 flex flex-col items-center justify-center gap-2 sm:flex-row md:justify-start">
+                <main>
+                <section className="overflow-hidden">
+                    <div className="relative mx-auto px-6 py-28 lg:py-20 w-[80%] border">
+                        <div className="lg:flex lg:items-center lg:gap-12 mt-12">
+                            <div className="relative z-10 mx-auto max-w-xl text-center lg:ml-0 lg:w-1/2 lg:text-left">
+                                <Link
+                                    to="/"
+                                    className="rounded-(--radius) mx-auto flex w-fit items-center gap-2 border p-1 pr-3 lg:ml-0">
+                                    <span className="bg-muted rounded-[calc(var(--radius)-0.25rem)] px-2 py-1 text-xs">New</span>
+                                    <span className="text-sm">Introduction Tailark Html</span>
+                                    <span className="bg-(--color-border) block h-4 w-px"></span>
+
+                                    <ArrowRight className="size-4" />
+                                </Link>
+
+                                <TextEffect per='char' preset='fade' className="mt-10 text-balance text-4xl font-bold md:text-5xl xl:text-5xl">Production Ready Digital Marketing blocks</TextEffect>
+                                <TextEffect className="mt-8">Error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta!</TextEffect>
+
+                                <div className="mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row lg:justify-start">
                                     <Button
                                         asChild
                                         size="lg"
-                                        className="px-5 text-base"
-                                    >
+                                        className="px-5 text-base">
                                         <Link to="#link">
                                             <span className="text-nowrap">Start Building</span>
                                         </Link>
@@ -37,23 +44,37 @@ export default function HeroSection() {
                                         asChild
                                         size="lg"
                                         variant="ghost"
-                                        className="px-5 text-base"
-                                    >
+                                        className="px-5 text-base">
                                         <Link to="#link">
                                             <span className="text-nowrap">Request a demo</span>
                                         </Link>
                                     </Button>
                                 </div>
                             </div>
-                            <img
-                                className="w-40 h-40 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] object-contain"
-                                src="static/TSBA Logo.png"
-                                alt="Abstract Object"
-                            />
+                        </div>
+                        <div className="absolute inset-0 -mx-4 rounded-3xl p-3 lg:col-span-3">
+                            <div className="relative">
+                                <div className="bg-radial-[at_65%_25%] to-background z-1 -inset-17 absolute from-transparent to-40%"></div>
+                                <img
+                                    className="hidden dark:block"
+                                    src="static/alumni.jpg"
+                                    alt="app illustration"
+                                    width={2796}
+                                    height={2008}
+                                />
+                                <img
+                                    className="dark:hidden"
+                                    src="static/alumni.jpg"
+                                    alt="app illustration"
+                                    width={2796}
+                                    height={2008}
+                                />
+                            </div>
                         </div>
                     </div>
                 </section>
-                <section className="bg-background lg:mt-[-70px]">
+                </main>
+                <section className="bg-background">
                     <div className="group relative m-auto max-w-6xl px-6">
                         <div className="flex flex-col items-center md:flex-row">
                             <div className="md:max-w-44 md:border-r md:pr-6">

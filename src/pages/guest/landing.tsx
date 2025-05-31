@@ -5,6 +5,9 @@ import HeroSection from '@/components/hero-section';
 import { Spotlight } from '@/components/ui/spotlight';
 import Features from '@/components/ui/features';
 import ContentSection from '@/components/ui/content';
+import FooterSection from '@/components/footer';
+import { InViewImagesGrid } from '@/components/scroll-view';
+import TeamSection from '@/components/team';
 function LandingPage() {
 
   return (
@@ -13,10 +16,11 @@ function LandingPage() {
         className='from-blue-800 via-blue-600 to-blue-400 blur-xl dark:from-blue-900 dark:via-blue-500 dark:to-blue-900'
         size={64}
       />
-      <HeroHeader/>
       <HeroSection/>
       <Features/>
-      <ContentSection/>
+      <InViewImagesGrid/>
+      <TeamSection/>
+      <FooterSection/>
     </>
   )
 }

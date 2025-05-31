@@ -36,6 +36,7 @@ export const HeroHeader = () => {
                                 to="/"
                                 aria-label="home"
                                 className="flex items-center space-x-2">
+                                <img className='w-10' src="static/TSBA Logo.png" alt="" />
                                 <div>BTECHLINK</div>
                             </Link>
 
