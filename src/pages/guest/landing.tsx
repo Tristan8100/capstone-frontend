@@ -8,6 +8,8 @@ import ContentSection from '@/components/ui/content';
 import FooterSection from '@/components/footer';
 import { InViewImagesGrid } from '@/components/scroll-view';
 import TeamSection from '@/components/team';
+import FAQsTwo from '@/components/faq';
+import { ModeToggle } from '@/components/mode-toggle';
 function LandingPage() {
 
   return (
@@ -20,6 +22,8 @@ function LandingPage() {
       <Features/>
       <InViewImagesGrid/>
       <TeamSection/>
+      <ContentSection/>
+      <FAQsTwo/>
       <FooterSection/>
     </>
   )

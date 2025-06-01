@@ -1,17 +1,23 @@
-
+import { ThemeProvider } from "@/components/theme-provider"
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import LandingPage from './pages/guest/landing'
+import { ModeToggle } from "./components/toggle"
+import Register from "./components/auth/register"
 
 function App() {
 
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LandingPage/>} />
-        </Routes>
-      </BrowserRouter>
+      <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<LandingPage/>} />
+            <Route path="/register" element={<Register/>} />
+            {/* Add more routes as needed */}
+          </Routes>
+        </BrowserRouter>
+      </ThemeProvider>
     </>
   )
 }

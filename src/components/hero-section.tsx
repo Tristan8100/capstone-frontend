@@ -11,7 +11,7 @@ export default function HeroSection() {
     return (
         <>
             <HeroHeader />
-            <main className="overflow-x-hidden">
+            <main className="overflow-x-hidden" id="home">
                 <main>
                 <section className="overflow-hidden">
                     <div className="relative mx-auto px-6 py-28 lg:py-20 w-[80%] border">

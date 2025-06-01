@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
-import { Settings2, Sparkles, Zap } from 'lucide-react'
+import { Settings2, Sparkles, IdCard, Zap } from 'lucide-react'
 import type { ReactNode } from 'react'
 
 export default function Features() {
@@ -14,7 +14,7 @@ export default function Features() {
                     <Card className="group shadow-zinc-950/5">
                         <CardHeader className="pb-3">
                             <CardDecorator>
-                                <Zap
+                                <IdCard
                                     className="size-6"
                                     aria-hidden
                                 />
