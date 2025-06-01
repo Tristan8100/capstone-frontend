@@ -36,7 +36,7 @@ export default function HeroSection() {
                                         size="lg"
                                         className="px-5 text-base">
                                         <Link to="#link">
-                                            <span className="text-nowrap">Start Building</span>
+                                            <span className="text-nowrap">Find My Profile</span>
                                         </Link>
                                     </Button>
                                     <Button
@@ -46,7 +46,7 @@ export default function HeroSection() {
                                         variant="ghost"
                                         className="px-5 text-base">
                                         <Link to="#link">
-                                            <span className="text-nowrap">Request a demo</span>
+                                            <span className="text-nowrap">Login</span>
                                         </Link>
                                     </Button>
                                 </div>
@@ -89,7 +89,7 @@ export default function HeroSection() {
                                         <img
                                             className="mx-auto h-[50px] w-fit dark:invert"
                                             src="static/TSBA Logo.png"
-                                            alt="Nvidia Logo"
+                                            alt="Alumni"
                                             height="28"
                                             width="auto"
                                         />
@@ -99,7 +99,7 @@ export default function HeroSection() {
                                         <img
                                             className="mx-auto h-[50px] w-fit dark:invert"
                                             src="static/informationtechnology.png"
-                                            alt="Nvidia Logo"
+                                            alt="IT"
                                             height="28"
                                             width="auto"
                                         />
@@ -109,7 +109,7 @@ export default function HeroSection() {
                                         <img
                                             className="mx-auto h-[50px] w-fit dark:invert"
                                             src="static/shs.png"
-                                            alt="Nvidia Logo"
+                                            alt="shs"
                                             height="28"
                                             width="auto"
                                         />
@@ -117,54 +117,9 @@ export default function HeroSection() {
 
                                     <div className="flex">
                                         <img
-                                            className="mx-auto h-4 w-fit dark:invert"
-                                            src="https://html.tailus.io/blocks/customers/column.svg"
-                                            alt="Column Logo"
-                                            height="16"
-                                            width="auto"
-                                        />
-                                    </div>
-                                    <div className="flex">
-                                        <img
-                                            className="mx-auto h-4 w-fit dark:invert"
-                                            src="https://html.tailus.io/blocks/customers/github.svg"
-                                            alt="GitHub Logo"
-                                            height="16"
-                                            width="auto"
-                                        />
-                                    </div>
-                                    <div className="flex">
-                                        <img
-                                            className="mx-auto h-5 w-fit dark:invert"
-                                            src="https://html.tailus.io/blocks/customers/nike.svg"
-                                            alt="Nike Logo"
-                                            height="20"
-                                            width="auto"
-                                        />
-                                    </div>
-                                    <div className="flex">
-                                        <img
-                                            className="mx-auto h-5 w-fit dark:invert"
-                                            src="https://html.tailus.io/blocks/customers/lemonsqueezy.svg"
-                                            alt="Lemon Squeezy Logo"
-                                            height="20"
-                                            width="auto"
-                                        />
-                                    </div>
-                                    <div className="flex">
-                                        <img
-                                            className="mx-auto h-4 w-fit dark:invert"
-                                            src="https://html.tailus.io/blocks/customers/laravel.svg"
-                                            alt="Laravel Logo"
-                                            height="16"
-                                            width="auto"
-                                        />
-                                    </div>
-                                    <div className="flex">
-                                        <img
-                                            className="mx-auto h-7 w-fit dark:invert"
-                                            src="https://html.tailus.io/blocks/customers/lilly.svg"
-                                            alt="Lilly Logo"
+                                            className="mx-auto h-[50px] w-fit dark:invert"
+                                            src="static/artsandsciences.png"
+                                            alt="arts and sciences"
                                             height="28"
                                             width="auto"
                                         />
@@ -172,13 +127,34 @@ export default function HeroSection() {
 
                                     <div className="flex">
                                         <img
-                                            className="mx-auto h-6 w-fit dark:invert"
-                                            src="https://html.tailus.io/blocks/customers/openai.svg"
-                                            alt="OpenAI Logo"
-                                            height="24"
+                                            className="mx-auto h-[50px] w-fit dark:invert"
+                                            src="static/businessandaccountancy.png"
+                                            alt="business and accountancy"
+                                            height="28"
                                             width="auto"
                                         />
                                     </div>
+
+                                    <div className="flex">
+                                        <img
+                                            className="mx-auto h-[50px] w-fit dark:invert"
+                                            src="static/education.png"
+                                            alt="education"
+                                            height="28"
+                                            width="auto"
+                                        />
+                                    </div>
+
+                                    <div className="flex">
+                                        <img
+                                            className="mx-auto h-[50px] w-fit dark:invert"
+                                            src="static/hmtm.png"
+                                            alt="hmtm"
+                                            height="28"
+                                            width="auto"
+                                        />
+                                    </div>
+
                                 </InfiniteSlider>
 
                                 <div className="bg-linear-to-r from-background absolute inset-y-0 left-0 w-20"></div>
