@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import LandingPage from './pages/guest/landing'
 import { ModeToggle } from "./components/toggle"
-import Register from "./components/auth/register"
+import Register from "./components/auth/login"
+import LoginPage from "./components/auth/auth-template"
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<LandingPage/>} />
-            <Route path="/register" element={<Register/>} />
+            <Route path="/login" element={<Register/>} />
             {/* Add more routes as needed */}
           </Routes>
         </BrowserRouter>
