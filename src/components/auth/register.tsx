@@ -1,16 +1,16 @@
 import AuthTemplate from "./auth-template"
-import { LoginForm } from "../login-form"
+import { RegisterForm } from "../register-form"
 
 
-function Login() {
+function Register() {
 
   return (
     <>
       <AuthTemplate>
-        <LoginForm />
+        <RegisterForm />
       </AuthTemplate>
     </>
   )
 }
 
-export default Login
+export default Register
